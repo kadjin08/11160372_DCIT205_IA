@@ -1,0 +1,805 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 103vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/u6.jpeg);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 200px;
+    background-blend-mode: lighten;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding :8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(32, 71, 178);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 10px;
+    font-size: 14px;
+    color: antiquewhite;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(68, 153, 233);
+    background: transparent;
+    font-size: 13px;
+    position: relative;
+    padding: 12px 34px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid  rgb(32, 71, 178);
+    background-color:  rgb(32, 71, 178);
+    transition: 0.5s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: rgb(178, 142, 32);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+
+
+.course{
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   padding-top: 8%; 
+}
+
+.course h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(65, 81, 123);
+}
+
+.course p{
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background-color: rgb(103, 163, 241);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.course-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(65, 81, 123);
+}
+
+.course-col p{
+    text-align: left;
+    font-size: 16px;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+.mission{
+    width: 75%;
+    text-align: center;
+    padding: 3%;
+    margin: auto;
+    background: rgb(255, 251, 201);
+}
+
+
+
+.mis-img h3{
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(65, 81, 123);
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 3%;
+}
+
+.mission p{
+    margin: 40px;
+    text-align: center;
+}
+
+
+
+.head{
+    width: 80%;
+    margin: auto;
+    padding-top: 8%;
+}
+
+.head h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(65, 81, 123);
+    text-align: center;
+}
+
+.head-col img{
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 45px;
+    height:  10%;
+}
+
+.head-col{
+    position: relative;
+    flex-basis: 31%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%; 
+    background: rgb(255, 251, 201);
+}
+
+.head-col p{
+    margin: 8%;
+}
+
+.event{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 8%;
+    
+}
+
+.event h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(65, 81, 123);
+}
+
+
+.event p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.event-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    background-size: auto;
+    
+    
+}
+  
+
+.event-col img{
+    width: 100%;
+    background-size: contain;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(59, 79, 157, 0.7);
+    cursor: pointer;
+    
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 400;
+    color: grey;
+    font-size: 17px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.layer:hover h3{
+    bottom: 80%;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.layer p{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 14px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: inherit;
+    opacity: 0;
+}
+
+.layer:hover p{
+    bottom: 25%;
+    opacity: 1.5;
+    transition: 1.5s;
+
+}
+
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(img/students1.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.cta h1{
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px) {
+    .cta h1{
+        font-size: 24px;
+    }  
+}
+
+.cta-btn{
+    margin-top: 50px;
+}
+
+
+/* footer */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: bisque;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: black;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+
+
+/*---about us page---*/
+
+.sub-header{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/students6.webp);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header h1{
+    margin-top: 180px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.sub-header p{
+    margin: auto;
+    padding-top: 12%;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.sub-header-contact{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/students8.webp);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header-contact h1{
+    margin-top: 180px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.sub-header-contact p{
+    margin: auto;
+    padding-top: 12%;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.sub-header-about{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/stud2.webp);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header-about h1{
+    margin-top: 180px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.sub-header-about p{
+    margin: auto;
+    padding-top: 12%;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.sub-header-masters{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/stud3.webp);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header-masters h1{
+    margin-top: 180px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.sub-header-masters p{
+    margin: auto;
+    padding-top: 12%;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.sub-header-phd{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/phd1.jpg);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header-phd h1{
+    margin-top: 180px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.sub-header-phd p{
+    margin: auto;
+    padding-top: 12%;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.sub-header-it{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/cs3.jpg);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header-it h1{
+    margin-top: 180px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.sub-header-it p{
+    margin: auto;
+    padding-top: 12%;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.sub-header-undergrad{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/mobdev.jpg);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header-undergrad h1{
+    margin-top: 180px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.sub-header-undergrad p{
+    margin: auto;
+    padding-top: 12%;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.sub-header-blog{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/students8.webp);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header-blog h1{
+    margin-top: 180px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.sub-header-blog p{
+    margin: auto;
+    padding-top: 12%;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+
+
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img{
+    width: 100%;
+}
+
+.about-col h1{
+    padding-top: 0;
+}
+
+.about-col h4{
+    margin-top: 25px;
+}
+
+.about-col p{
+    padding: 15px 0 25px;
+}
+
+.about-col a{
+    text-decoration: none;
+}
+
+.blue-btn{
+    background: transparent;
+    margin-top: 14px;
+    margin-bottom: 2px;
+    border: 1px solid rgba(59, 79, 157, 0.7);
+    color: rgba(59, 79, 157, 0.7);
+    text-decoration: none;
+}
+
+.blue-btn:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+/* contact page */
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div{
+    align-items: center;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+    color: rgba(59, 79, 157, 0.7);
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+}
+
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: rgba(59, 79, 157, 0.7);
+    font-weight: 400;
+}
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.tablerow{
+    width: 90%;
+    margin: 10% auto;
+    padding-top: 15px;
+    position: inherit;
+    font-size: small;
+    padding-bottom: 50px;
+}
+
+.tablerow1, .tablerow2{
+    display: flex;
+    padding: 12px 3px;
+}
+
+
+th,td{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 760px) {
+    .tablerow{
+        width: 90%;
+    }
+}
+
+/* blog-content */
+
+.blog-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+    display: flex;
+}
+
+.blog-left{
+    flex-basis: 67%;
+}
+
+.blog-left img{
+    width: 100%;
+}
+
+.blog-left h2{
+    color: black;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.blog-left p{
+    padding: 0;
+}
+
+.blog-right{
+    flex-basis: 32%;
+    margin-left: 5%;
+}
+
+.blog-right h3{
+    background: rgba(59, 79, 157, 0.7);
+    color: white;
+    padding: 7px 0;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  
+}
+
+.blog-right div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 5px;
+    margin-left: 5%;
+    box-sizing: border-box;
+}
+
+.comment-box{
+    border: 1px solid;
+    margin :50px 0;
+    padding: 10px 20px;
+}
+
+.comment-box h3{
+    text-align: left;
+}
+
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 15px;
+    margin :5px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0 ;
+}
+
+.comment-form button{
+    margin: 10px 0;
+    margin-left: 16px;
+}
+
+@media (max-width:700px) {
+    .sub-header h1{
+        font-size: 24px;
+    }
+}
